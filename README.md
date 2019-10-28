@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ![alt text](https://imgur.com/WcL1bp1.png)
 
 ## Available Scripts

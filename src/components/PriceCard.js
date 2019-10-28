@@ -8,6 +8,7 @@ const PriceCard = props => {
       : props.value;
   return (
     <div className="card mr-0 custom-card">
+      {/* // <div class="card border-primary mb-3" style="max-width: 18rem;">       */}
       <div className="card-body">
         <img
           src={props.src}
@@ -27,7 +28,8 @@ const PriceCard = props => {
          
         </p>
       </div>
-    </div>
+      </div>
+    // </div>
   );
 };
 

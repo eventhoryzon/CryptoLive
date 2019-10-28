@@ -4,9 +4,9 @@ import FusionCharts from "fusioncharts";
 import Charts from "fusioncharts/fusioncharts.charts";
 import Widgets from "fusioncharts/fusioncharts.widgets";
 import ReactFC from "react-fusioncharts";
-import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+import CandyTheme from "fusioncharts/themes/fusioncharts.theme.candy";
 
-ReactFC.fcRoot(FusionCharts, Charts, Widgets, FusionTheme);
+ReactFC.fcRoot(FusionCharts, Charts, Widgets, CandyTheme);
 
 class Body extends React.Component {
   constructor(props) {
@@ -17,26 +17,26 @@ class Body extends React.Component {
       btcusd: "-",
       ltcusd: "-",
       ethusd: "-",
-      showChart: false,
+      showChart:false,
       initValue: 0,
       dataSource: {
         chart: {
-          caption: "Live",
-          subCaption: "",
-          xAxisName: "Local Time",
+          caption: "Bitcoin",
+          subCaption: "Live Ticker Data",
+          xAxisName: "Current Time",
           yAxisName: "USD",
           numberPrefix: "$",
           refreshinterval: "2",
           slantLabels: "1",
-          numdisplaysets: "10",
+          numdisplaysets: "6",
           labeldisplay: "rotate",
           showValues: "0",
           showRealTimeValue: "0",
-          showhovereffect: "1",
+          showhovereffect: "0",
           numbersuffix: "%",
           drawcrossline: "1",
           plottooltext: "Price: <b>$value</b> at $label Hrs",
-          theme: "fusion"
+          theme: "candy"
         },
         // Show/Hide Standard Range Selector
         extensions: {
